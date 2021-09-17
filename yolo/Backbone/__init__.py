@@ -6,7 +6,6 @@ from nb.torch.blocks.trans_blocks import Focus
 from nb.torch.blocks.head_blocks import SPP
 from nb.torch.blocks.conv_blocks import ConvBase
 from nb.torch.utils import device
-from torch._C import CudaByteStorageBase
 
 class YoloV5(nn.Module):
     def __init__(self,num_cls=80,ch=3,anchors=None):
