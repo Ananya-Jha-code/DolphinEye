@@ -1,1 +1,1 @@
-# dolphin-eye
+# dolphin-eye for vistually impaired
