@@ -66,7 +66,7 @@ To use the repo and run inferences, please follow the guidelines below:
 =======
 We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
 <img src="misc/demo.gif" width="800">
->>>>>>> 44a9d17ebfd15e2fd31458e74ac1a36b3b6917da
+
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
