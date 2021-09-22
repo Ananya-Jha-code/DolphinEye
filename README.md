@@ -19,7 +19,7 @@ The three main parts of our architecture are:
 The three main tasks of our project are:
 - Object Detection using the YOLOv5 architecture
 - Calculating the depth of the objects
-- Sending messages or singals once encountered by object in a certain distance
+- Sending warning messages in case object is too close
 
 ## Implementation details
 - Object Detection using the YOLOv5 architecture
@@ -30,6 +30,8 @@ The three main tasks of our project are:
 - Calculating the depth of the objects
    - The inspiration for depth calculation was taken from [here](https://ieeexplore.ieee.org/document/9234074)
    - It essentially utilises a focal distance relationship to calculate how far an object is.
+- Sending warning messages in case object is too close
+   - In case the distance falls below a threshhold, we've utilised the google tts API to make an mp4 of a simple warning (STOP) which is played back to the user. 
 - [NOTE] This implementation works ONLY for a real time stream
  
 ## Installation and Quick Start
@@ -47,12 +49,12 @@ To use the repo and run inferences, please follow the guidelines below:
 - Running the file for inference:
 
         $ python inference.py
+        
 
-## Dependencies
-- PyTorch
-- Numpy
-- Pandas 
-- Opencv
+## Demo
+
+We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
+<img src="misc/demo.gif" width="800">
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
