@@ -19,9 +19,23 @@ The three main parts of our architecture are:
 The three main tasks of our project are:
 - Object Detection using the YOLOv5 architecture
 - Calculating the depth of the objects
-- Sending messages or singals once encountered by object in a certain distance
+- Sending warning messages in case object is too close
 
 ## Implementation details
+<<<<<<< HEAD
+=======
+- Object Detection using the YOLOv5 architecture
+   - Model implemented is YoloV5s, which is the smallest version of YoloV5. 
+   - Model architecture is defined in a [YAML file](models/yolov5s.yaml), which clearly mentions all the layers and their arguments. 
+   - All the model blocks are defined in the files in model folder, along with the main yolo.py file which parses the yaml and creates the model.
+   - This implementation loads in the pretrained weights from YoloV5 repo.
+- Calculating the depth of the objects
+   - The inspiration for depth calculation was taken from [here](https://ieeexplore.ieee.org/document/9234074)
+   - It essentially utilises a focal distance relationship to calculate how far an object is.
+- Sending warning messages in case object is too close
+   - In case the distance falls below a threshhold, we've utilised the google tts API to make an mp4 of a simple warning (STOP) which is played back to the user. 
+- [NOTE] This implementation works ONLY for a real time stream
+>>>>>>> 44a9d17ebfd15e2fd31458e74ac1a36b3b6917da
  
 ## Installation and Quick Start
 The code by default will only run on a video stream.
@@ -38,13 +52,21 @@ To use the repo and run inferences, please follow the guidelines below:
 - For running on CLI, use the inference file as follows:
 
         $ python inference.py
+        
 
+## Demo
+
+<<<<<<< HEAD
 ## Dependencies
 - PyTorch
 - Numpy
 - Pandas 
 - Opencv
 - PIL
+=======
+We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
+<img src="misc/demo.gif" width="800">
+>>>>>>> 44a9d17ebfd15e2fd31458e74ac1a36b3b6917da
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
