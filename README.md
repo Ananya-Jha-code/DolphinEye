@@ -22,8 +22,6 @@ The three main tasks of our project are:
 - Sending warning messages in case object is too close
 
 ## Implementation details
-<<<<<<< HEAD
-=======
 - Object Detection using the YOLOv5 architecture
    - Model implemented is YoloV5s, which is the smallest version of YoloV5. 
    - Model architecture is defined in a [YAML file](models/yolov5s.yaml), which clearly mentions all the layers and their arguments. 
@@ -35,7 +33,6 @@ The three main tasks of our project are:
 - Sending warning messages in case object is too close
    - In case the distance falls below a threshhold, we've utilised the google tts API to make an mp4 of a simple warning (STOP) which is played back to the user. 
 - [NOTE] This implementation works ONLY for a real time stream
->>>>>>> 44a9d17ebfd15e2fd31458e74ac1a36b3b6917da
  
 ## Installation and Quick Start
 The code by default will only run on a video stream.
