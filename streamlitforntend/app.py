@@ -39,11 +39,11 @@ def main():
 
         enhance_type = st.sidebar.radio("Enhance Type",["Original","Working"])  
         if enhance_type == 'Working':
-            new_video = 
-            st.video(new_video)
-           
-        if __name__ == '__main__':
-            main()        
+            #new_video = pointing to the working file
+        
+            #st.video(new_video)
+        #if __name__ == '__main__':
+                 main()        
 
 
 
