@@ -13,32 +13,17 @@ The three main parts of our architecture are:
 - Model Backbone - CSPNet are used as a backbone to extract rich informative features from an input image
 - Model Neck - Model Neck is mainly used to generate feature pyramids. PANet is used for as neck to get feature pyramids
 - Model Head - The model Head is mainly used to perform the final detection part. It applied anchor boxes on features and generates final output  vectors with class probabilities, objectness scores, and bounding boxes.
+<p align="center">
+<img src="![The-network-architecture-of-Yolov5-It-consists-of-three-parts-1-Backbone-CSPDarknet](https://user-images.githubusercontent.com/72155378/134270700-b9005db1-2061-4508-a877-ef1362c3e0d4.jpg)" height="400" alt="Model structure">
 
-The three main works of our project are:
+The three main tasks of our project are:
 - Object Detection using the YOLOv5 architecture
 - Calculating the depth of the objects
 - Sending messages or singals once encountered by object in a certain distance
 
 ## Implementation details
- - The zip files containing images and reports were mounted from Google Drive.
- - A dataset was prepared through a data cleaning process that consists of two images per report, one frontal and one lateral view.
- - Reports were extraced from .xml files and the frontal and lateral views were combined to prepare the above mentioned dataset and this was used to generate features.
- - glove.840B.300d was used for obtaining vector representations and generating the embedding matrix. It is available [here](https://nlp.stanford.edu/projects/glove/).
-   - To run the model, download the glove file and add to MedGen folder.
- - Features were extracted using DenseNet121 model loaded with ChexNet weights (available [here](https://www.kaggle.com/theewok/chexnet-keras-weights)). The paper used a VGG-19 network.
-   - The features are available in ./features directory. 
- - The features were fed into a model with the following structure
-<p align="center">
-<img src="https://github.com/01pooja10/Medical-Report-Generator/blob/main/misc/attn_mod.jpg" height="400" alt="Model structure">
  
- - To train the model, run *encoder_decoder.ipynb* in root directory.
  
- ## Generated Report
-- The model was trained for 10 epochs. Due to computational difficulties, we were unable to train for more epochs and hence the model did not converge. 
-- Final BLEU score was 0.643
- <p align="center">
-<img src="https://github.com/01pooja10/Medical-Report-Generator/blob/main/misc/generated_report.png" height="300" alt="Generated Report">
-
 ## Installation and Quick Start
 The code by default will only run on a video stream.
 To use the repo and run inferences, please follow the guidelines below:
@@ -51,10 +36,6 @@ To use the repo and run inferences, please follow the guidelines below:
 
         $ cd dolphin-eye/
         
-- Setting up the Python Environment with dependencies:
-
-        $ pip install -r requirements.txt
-
 - Running the file for inference:
 
         $ python inference.py
@@ -63,12 +44,7 @@ To use the repo and run inferences, please follow the guidelines below:
 - PyTorch
 - Numpy
 - Pandas 
-- PIL 8.0.1
-- Nltk 3.5
-- Matplotlib 3.3.2
 - Opencv 4.5.1
-- Tqdm 4.50.2
-- OS
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
