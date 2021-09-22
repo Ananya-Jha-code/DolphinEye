@@ -13,6 +13,7 @@ The three main parts of our architecture are:
 - Model Backbone - CSPNet are used as a backbone to extract rich informative features from an input image
 - Model Neck - Model Neck is mainly used to generate feature pyramids. PANet is used for as neck to get feature pyramids
 - Model Head - The model Head is mainly used to perform the final detection part. It applied anchor boxes on features and generates final output  vectors with class probabilities, objectness scores, and bounding boxes.
+
 ![The-network-architecture-of-Yolov5-It-consists-of-three-parts-1-Backbone-CSPDarknet](https://user-images.githubusercontent.com/72155378/134271959-55ad63a4-ef1a-40fc-9c04-9e2369e19aa3.jpg)
 
 The three main tasks of our project are:
