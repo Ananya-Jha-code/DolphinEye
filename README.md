@@ -22,7 +22,15 @@ The three main tasks of our project are:
 - Sending messages or singals once encountered by object in a certain distance
 
 ## Implementation details
- 
+- Object Detection using the YOLOv5 architecture
+   - Model implemented is YoloV5s, which is the smallest version of YoloV5. 
+   - Model architecture is defined in a [YAML file](models/yolov5s.yaml), which clearly mentions all the layers and their arguments. 
+   - All the model blocks are defined in the files in model folder, along with the main yolo.py file which parses the yaml and creates the model.
+   - This implementation loads in the pretrained weights from YoloV5 repo.
+- Calculating the depth of the objects
+   - The inspiration for depth calculation was taken from [here](https://ieeexplore.ieee.org/document/9234074)
+   - It essentially utilises a focal distance relationship to calculate how far an object is.
+- [NOTE] This implementation works ONLY for a real time stream
  
 ## Installation and Quick Start
 The code by default will only run on a video stream.
