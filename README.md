@@ -55,18 +55,16 @@ To use the repo and run inferences, please follow the guidelines below:
         
 
 ## Demo
+We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
 
-<<<<<<< HEAD
+<img src="misc/demo.gif" width="800">
+
 ## Dependencies
 - PyTorch
 - Numpy
 - Pandas 
 - Opencv
 - PIL
-=======
-We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
-<img src="misc/demo.gif" width="800">
-
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
