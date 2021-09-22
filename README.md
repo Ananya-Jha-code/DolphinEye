@@ -44,7 +44,7 @@ To use the repo and run inferences, please follow the guidelines below:
 - PyTorch
 - Numpy
 - Pandas 
-- Opencv 4.5.1
+- Opencv
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
