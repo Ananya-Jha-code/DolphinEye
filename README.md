@@ -7,7 +7,7 @@ With just little aid to the visually impaired people existing currently, there i
 We have used the [pretrained weights](https://github.com/ultralytics/yolov5) of the [Microsoft COCO dataset](https://cocodataset.org/)(Microsoft Common Objects in Context)  which is a large-scale object detection, segmentation, key-point detection, and captioning dataset. The dataset consists of 328K images.
 
 ## Model Components
-The architecture used by us is YOLOv5s. YOLOv5 is a family of compound-scaled object detection models trained on the COCO dataset, and includes simple functionality for Test Time Augmentation (TTA), model ensembling, hyperparameter evolution, and export to ONNX, CoreML and TFLite. The github repository to understand the model is [here](https://github.com/ultralytics/yolov5). 
+This project used a PyTorch implementation of YOLOv5s. YOLOv5 is a family of compound-scaled object detection models trained on the COCO dataset, and includes simple functionality for Test Time Augmentation (TTA), model ensembling, hyperparameter evolution, and export to ONNX, CoreML and TFLite. The github repository to understand the model is [here](https://github.com/ultralytics/yolov5). 
 
 The three main parts of our architecture are:
 - Model Backbone - CSPNet are used as a backbone to extract rich informative features from an input image
@@ -38,14 +38,18 @@ The three main tasks of our project are:
 The code by default will only run on a video stream.
 To use the repo and run inferences, please follow the guidelines below:
 
-- Cloning the Repository: 
+- Clone the Repository: 
 
-        $ git clone https://github.com/Ananya-Jha-code/dolphin-eye.git
+        $ git clone https://github.com/Ananya-Jha-code/DolphinEye.git
         
-- Entering the directory: 
+- Enter the directory: 
 
-        $ cd dolphin-eye/
+        $ cd dolphin-eye
         
+- Install the requirements:
+
+        $ pip install -r requirements.txt
+
 - For running on CLI, use the inference file as follows:
 
         $ python inference.py
@@ -55,13 +59,6 @@ To use the repo and run inferences, please follow the guidelines below:
 We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
 
 <img src="misc/demo.gif" width="800">
-
-## Dependencies
-- PyTorch
-- Numpy
-- Pandas 
-- Opencv
-- PIL
 
 ## Contributors 
 - [Simran Agarwal](https://github.com/simran29aw)
