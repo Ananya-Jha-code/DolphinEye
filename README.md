@@ -62,6 +62,7 @@ We can see how the distance of the chair in bottom left corned goes from around 
 <img src="misc/demo.gif" width="800">
 
 ## To-do
+- [ ] Finish streamlit frontend
 - [ ] Integrate the model with a flutter app
 - [ ] Improve accuracy for distance measurement
 
