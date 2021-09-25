@@ -67,7 +67,7 @@ We can see how the distance of the chair in bottom left corned goes from around 
 - [ ] Improve accuracy for distance measurement
 
 ## Contribution Guidelines
-We are always open to any ideas about how to improve the project, or add features, or discuss anything about it! Feel free to reach out to any of the contrbutors listed below.
+We are always open to any ideas about how to improve the project, or add features, or discuss anything about it! Feel free to reach out to any of the contributors listed below.
 
 ## Contributors 
 - [Ananya Jha](https://github.com/Ananya-Jha-code)
