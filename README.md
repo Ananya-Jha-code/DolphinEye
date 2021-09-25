@@ -68,7 +68,7 @@ We can see how the distance of the chair in bottom left corned goes from around 
 
 ## Contribution Guidelines
 We are always open to any ideas about how to improve the project, or add features, or discuss anything about it! Feel free to reach out to any of the contributors listed below.
-For contribution Guidelines , check out this [document](https://github.com/Ananya-Jha-code/DolphinEye/blob/main/contributing.md).
+For exact guidelines on how to contribute, check out this [document](https://github.com/Ananya-Jha-code/DolphinEye/blob/main/contributing.md).
 
 ## Contributors 
 - [Ananya Jha](https://github.com/Ananya-Jha-code)
