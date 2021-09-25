@@ -45,7 +45,7 @@ To use the repo and run inferences, please follow the guidelines below:
         
 - Enter the directory: 
 
-        $ cd dolphin-eye
+        $ cd DolphinEye
         
 - Install the requirements:
 
