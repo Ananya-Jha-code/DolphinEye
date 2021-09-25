@@ -1,6 +1,6 @@
 # DolphinEye
 
-This repository contains an implementation of YOLOv5s, details of which can be found [here](https://github.com/ultralytics/yolov5).
+This repository contains an implementation of YOLOv5s, the repository for the same can be found [here](https://github.com/ultralytics/yolov5).
 
 ## Inspiration
 With just little aid to the visually impaired people existing currently, there is a need to implement a device that helps them in their daily activities. The existing systems such as Screen Reading software and Braille devices help visually impaired people to read and have access to various gadgets but these technologies become are not useful in the case of navigation. Our system will facilitate visually impaired people around the globe. DolphinEye is made with an aim of helping a person with detecting the object in front of them, even with impaired eyesight and without the need of a companion. We present a method, which uses object detection on the live stream of videos. The resultant object or person is then transmitted to the impaired person in the form of signal. The goal is to provide inexpensive solution to the visually impaired and make their life better and self-sufficient.
