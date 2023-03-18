@@ -40,10 +40,7 @@ def inference(weights='weights/yolov5s.pt', source=0, imgsz=640, hide_labels=Fal
                     d=dist_calc(xywh)
                     label = label+". Distance = "+str(d)
                     color=Colors()
-                    color=color(c, True)
-                    if color == (56, 56, 255):
-                        winsound.Beep(5000, 1000)
-                    pen.box_label(xyxy, label, color)
+                    pen.box_label(xyxy, label, color=color(c, True))
             
             ######### Showing Result ###########
             im0 = pen.result()
