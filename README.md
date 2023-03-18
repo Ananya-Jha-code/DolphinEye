@@ -34,7 +34,7 @@ The three main tasks of our project are:
 - Sending warning messages in case object is too close
    - In case the distance falls below a threshhold, we've utilised the google tts API to make an mp4 of a simple warning (STOP) which is played back to the user. 
 - [NOTE] This implementation works ONLY for a real time stream
- 
+
 ## Installation and Quick Start
 The code by default will only run on a video stream.
 To use the repo and run inferences, please follow the guidelines below:
@@ -60,7 +60,7 @@ To use the repo and run inferences, please follow the guidelines below:
 We can see how the distance of the chair in bottom left corned goes from around 7000 to around 5000. Based on a threshhold, the application will issue a warning if the distance is less than the threshhold.
 
 <img src="misc/demo.gif" width="800">
-
+        
 ## To-do
 - [ ] Finish streamlit frontend
 - [ ] Integrate the model with a flutter app
@@ -74,4 +74,5 @@ For exact guidelines on how to contribute, check out this [document](https://git
 - [Ananya Jha](https://github.com/Ananya-Jha-code)
 - [Sashrika Surya](https://github.com/sashrika15)
 - [Simran Agarwal](https://github.com/simran29aw)
+
 
